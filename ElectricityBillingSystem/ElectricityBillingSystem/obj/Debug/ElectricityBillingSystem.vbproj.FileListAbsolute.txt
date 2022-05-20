@@ -1,1 +1,2 @@
 c:\users\adwaitrao\documents\visual studio 2012\Projects\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.exe.config
+C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.exe.config
