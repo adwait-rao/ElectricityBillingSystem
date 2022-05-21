@@ -3,8 +3,8 @@ Imports ElectricityBillingSystem.Dashboard
 
 Public Class login
     Dim read As String
-    Dim datafile As String
-    Dim connstring As String
+    'Dim datafile As String
+    'Dim connstring As String
     Dim myconnection As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
     Dim adminUsername As String = ""
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
