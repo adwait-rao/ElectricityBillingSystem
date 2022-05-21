@@ -1,11 +1,12 @@
 ﻿Imports System.Data.OleDb
+Imports ElectricityBillingSystem.Dashboard
 
 Public Class login
     Dim read As String
     Dim datafile As String
     Dim connstring As String
     Dim myconnection As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
-
+    Dim adminUsername As String = ""
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         '   read = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb"
         '   datafile = "C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb"
@@ -18,7 +19,7 @@ Public Class login
 
         Dim dr As OleDbDataReader = cmd.ExecuteReader
         Dim userFound As Boolean = False
-        Dim adminUsername As String = ""
+
         If TextBox1.Text = "" Or TextBox2.Text = "" Then
 
             If TextBox1.Text = "" Then
@@ -35,12 +36,15 @@ Public Class login
                 End While
 
                 If userFound = True Then
-                    Form1.Show()
+
+                    Dashboard.Label1.Text = adminUsername
+                    Dashboard.Show()
+
                 Else
                     MsgBox("Sorry, No User Found!", MsgBoxStyle.Exclamation)
                 End If
             Catch ex As Exception
-                MsgBox(ex, MsgBoxStyle.Exclamation)
+                MsgBox(ex.ToString, MsgBoxStyle.Exclamation)
             Finally
                 myconnection.Close()
             End Try

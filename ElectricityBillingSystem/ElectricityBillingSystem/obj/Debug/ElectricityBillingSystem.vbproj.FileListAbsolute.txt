@@ -9,3 +9,4 @@ C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingS
 C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.exe
 C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.xml
 C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.pdb
+C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.Dashboard.resources
