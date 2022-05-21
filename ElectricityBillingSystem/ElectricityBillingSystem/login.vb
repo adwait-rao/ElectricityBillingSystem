@@ -39,7 +39,7 @@ Public Class login
 
                     Dashboard.Label1.Text = adminUsername
                     Dashboard.Show()
-
+                    Me.Dispose()
                 Else
                     MsgBox("Sorry, No User Found!", MsgBoxStyle.Exclamation)
                 End If
