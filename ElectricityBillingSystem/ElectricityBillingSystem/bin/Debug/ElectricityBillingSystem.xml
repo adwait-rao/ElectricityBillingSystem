@@ -15,6 +15,10 @@ ElectricityBillingSystem
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:ElectricityBillingSystem.My.Resources.Resources.blank_person_icon_3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:ElectricityBillingSystem.My.Resources.Resources.ELECTRICITY_Billing_System">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
