@@ -40,6 +40,7 @@ Partial Class AddCustomer
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,7 +48,7 @@ Partial Class AddCustomer
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.MediumOrchid
+        Me.Label1.BackColor = System.Drawing.Color.MediumSlateBlue
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Yellow
         Me.Label1.Location = New System.Drawing.Point(365, 26)
@@ -169,8 +170,9 @@ Partial Class AddCustomer
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.Button1.BackColor = System.Drawing.Color.MediumPurple
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
         Me.Button1.Location = New System.Drawing.Point(102, 488)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(162, 53)
@@ -180,8 +182,9 @@ Partial Class AddCustomer
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.Button2.BackColor = System.Drawing.Color.MediumPurple
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Button2.Location = New System.Drawing.Point(340, 488)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 53)
@@ -201,7 +204,7 @@ Partial Class AddCustomer
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MediumOrchid
+        Me.PictureBox1.BackColor = System.Drawing.Color.MediumSlateBlue
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
@@ -209,12 +212,25 @@ Partial Class AddCustomer
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(862, 22)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(120, 35)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "BACK"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'AddCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Bisque
+        Me.BackColor = System.Drawing.Color.Moccasin
         Me.ClientSize = New System.Drawing.Size(1013, 564)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -259,4 +275,5 @@ Partial Class AddCustomer
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

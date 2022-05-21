@@ -25,10 +25,11 @@ Partial Class Dashboard
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,9 +41,10 @@ Partial Class Dashboard
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(-2, -1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(566, 59)
+        Me.Panel1.Size = New System.Drawing.Size(881, 59)
         Me.Panel1.TabIndex = 0
         '
         'Button3
@@ -50,7 +52,7 @@ Partial Class Dashboard
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(431, 13)
+        Me.Button3.Location = New System.Drawing.Point(734, 13)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(120, 35)
         Me.Button3.TabIndex = 9
@@ -68,17 +70,6 @@ Partial Class Dashboard
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Admin"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.ElectricityBillingSystem.My.Resources.Resources.blank_person_icon_3
-        Me.PictureBox1.Image = Global.ElectricityBillingSystem.My.Resources.Resources.blank_person_icon_3
-        Me.PictureBox1.Location = New System.Drawing.Point(14, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 52)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -95,7 +86,7 @@ Partial Class Dashboard
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(131, 116)
+        Me.Button1.Location = New System.Drawing.Point(276, 135)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(283, 46)
         Me.Button1.TabIndex = 7
@@ -107,18 +98,42 @@ Partial Class Dashboard
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(131, 231)
+        Me.Button2.Location = New System.Drawing.Point(276, 240)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(283, 46)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Add Payment Bill"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(276, 357)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(283, 46)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "View All Customers"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.ElectricityBillingSystem.My.Resources.Resources.blank_person_icon_3
+        Me.PictureBox1.Image = Global.ElectricityBillingSystem.My.Resources.Resources.blank_person_icon_3
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 52)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(561, 359)
+        Me.ClientSize = New System.Drawing.Size(881, 525)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
@@ -137,4 +152,5 @@ Partial Class Dashboard
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
