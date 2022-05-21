@@ -5,11 +5,12 @@ Public Class Dashboard
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
+        Me.Hide()
         login.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Me.Hide()
+        AddCustomer.Show()
     End Sub
 End Class
