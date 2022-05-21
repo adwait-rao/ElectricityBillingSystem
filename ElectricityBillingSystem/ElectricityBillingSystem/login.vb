@@ -3,8 +3,8 @@ Imports ElectricityBillingSystem.Dashboard
 
 Public Class login
     Dim read As String
-    Dim datafile As String
-    Dim connstring As String
+    'Dim datafile As String
+    'Dim connstring As String
     Dim myconnection As OleDbConnection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
     Dim adminUsername As String = ""
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -14,7 +14,7 @@ Public Class login
 
         'myconnection.ConnectionString = connstring
 
-        Dim cmd As OleDbCommand = New OleDbCommand("select *from AdminUsers Where adminName = '" & TextBox1.Text & "' and passwd = '" & TextBox2.Text & "'", myconnection)
+        Dim cmd As OleDbCommand = New OleDbCommand("select * from AdminUsers Where adminName = '" & TextBox1.Text & "' and passwd = '" & TextBox2.Text & "'", myconnection)
         myconnection.Open()
 
         Dim dr As OleDbDataReader = cmd.ExecuteReader
@@ -39,7 +39,7 @@ Public Class login
 
                     Dashboard.Label1.Text = adminUsername
                     Dashboard.Show()
-                    Me.Dispose()
+                    Me.Hide()
                 Else
                     MsgBox("Sorry, No User Found!", MsgBoxStyle.Exclamation)
                 End If
