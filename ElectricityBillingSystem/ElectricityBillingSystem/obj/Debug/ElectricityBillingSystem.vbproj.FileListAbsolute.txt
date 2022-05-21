@@ -14,3 +14,15 @@ C:\Users\DELL\OneDrive\Documents\GitHub\ElectricityBillingSystem\ElectricityBill
 C:\Users\DELL\OneDrive\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.exe
 C:\Users\DELL\OneDrive\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.xml
 C:\Users\DELL\OneDrive\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.pdb
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.exe.config
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.exe
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.xml
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.pdb
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.exe
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.pdb
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\bin\Debug\ElectricityBillingSystem.xml
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.Dashboard.resources
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.login.resources
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.Resources.resources
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.vbproj.GenerateResource.Cache
+H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.AddCustomer.resources

@@ -23,12 +23,12 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,6 +44,29 @@ Partial Class Dashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(566, 59)
         Me.Panel1.TabIndex = 0
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(431, 13)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(120, 35)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Log Out"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(74, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(46, 16)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Admin"
         '
         'PictureBox1
         '
@@ -66,17 +89,6 @@ Partial Class Dashboard
         Me.Label1.Size = New System.Drawing.Size(71, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "label"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(74, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 16)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Admin"
         '
         'Button1
         '
@@ -101,18 +113,6 @@ Partial Class Dashboard
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Add Payment Bill"
         Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(431, 13)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(120, 35)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Log Out"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'Dashboard
         '

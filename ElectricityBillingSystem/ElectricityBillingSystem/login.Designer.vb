@@ -29,10 +29,10 @@ Partial Class login
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -98,6 +98,10 @@ Partial Class login
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.ElectricityBillingSystem.My.Resources.Resources.ELECTRICITY_Billing_System
@@ -107,10 +111,6 @@ Partial Class login
         Me.PictureBox1.Size = New System.Drawing.Size(275, 360)
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
-        '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
         '
         'login
         '
@@ -129,8 +129,8 @@ Partial Class login
         Me.ForeColor = System.Drawing.Color.White
         Me.Name = "login"
         Me.Text = "Login Page"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCustomer.Designer.vb">
+      <DependentUpon>AddCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="blank-person-icon-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
