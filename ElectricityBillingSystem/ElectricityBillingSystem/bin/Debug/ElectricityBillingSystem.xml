@@ -23,6 +23,10 @@ ElectricityBillingSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:ElectricityBillingSystem.My.Resources.Resources.HAD_POWER_MDL_HAD_POWER_MAHARASHTRA_DISTRIBUTION_LIMITED">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:ElectricityBillingSystem.My.Resources.Resources.image">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

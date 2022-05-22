@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class GenerateBill
-    Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
+    Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
     Dim da As New OleDbDataAdapter
     Dim cmd As New OleDbCommand
     Dim ds As New DataSet
@@ -36,7 +36,7 @@ Public Class GenerateBill
             MsgBox("No Such Data In Bill Table")
         End Try
         Dim a As Integer
-        While dr.Read
+        While dr.Read()
             Label25.Text = dr("ConsumerType")
             Label27.Text = "₹" & dr("unitrate")
             Label28.Text = ComboBox2.SelectedItem
@@ -49,5 +49,17 @@ Public Class GenerateBill
         b = a * (18 / 100)
         a = a + b
         Label31.Text = "₹ " & a.ToString
+    End Sub
+
+    
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.PrintForm1.PrintAction = Printing.PrintAction.PrintToPreview
+        Me.PrintForm1.Print()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        login.Show()
+        Me.Hide()
     End Sub
 End Class

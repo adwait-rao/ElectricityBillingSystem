@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property HAD_POWER_MDL_HAD_POWER_MAHARASHTRA_DISTRIBUTION_LIMITED() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HAD POWER-MDL HAD POWER MAHARASHTRA DISTRIBUTION LIMITED", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property image() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("image", resourceCulture)
