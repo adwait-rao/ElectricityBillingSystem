@@ -41,6 +41,7 @@ Partial Class ViewAllCustomers
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -115,7 +116,7 @@ Partial Class ViewAllCustomers
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(31, 477)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(133, 22)
@@ -123,7 +124,7 @@ Partial Class ViewAllCustomers
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(209, 477)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(131, 22)
@@ -131,7 +132,7 @@ Partial Class ViewAllCustomers
         '
         'TextBox3
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(393, 477)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(135, 22)
@@ -147,7 +148,7 @@ Partial Class ViewAllCustomers
         '
         'TextBox5
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(582, 477)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(145, 22)
@@ -166,7 +167,7 @@ Partial Class ViewAllCustomers
         Me.Button1.BackColor = System.Drawing.Color.SlateBlue
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button1.Location = New System.Drawing.Point(165, 601)
+        Me.Button1.Location = New System.Drawing.Point(43, 601)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(219, 55)
         Me.Button1.TabIndex = 15
@@ -178,7 +179,7 @@ Partial Class ViewAllCustomers
         Me.Button2.BackColor = System.Drawing.Color.SlateBlue
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button2.Location = New System.Drawing.Point(511, 601)
+        Me.Button2.Location = New System.Drawing.Point(339, 601)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(207, 55)
         Me.Button2.TabIndex = 16
@@ -190,7 +191,7 @@ Partial Class ViewAllCustomers
         Me.Button3.BackColor = System.Drawing.Color.SlateBlue
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button3.Location = New System.Drawing.Point(825, 601)
+        Me.Button3.Location = New System.Drawing.Point(635, 601)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(232, 55)
         Me.Button3.TabIndex = 17
@@ -232,12 +233,25 @@ Partial Class ViewAllCustomers
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "All Customers"
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.SlateBlue
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button4.Location = New System.Drawing.Point(956, 601)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(232, 55)
+        Me.Button4.TabIndex = 18
+        Me.Button4.Text = "Delete Customer"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'ViewAllCustomers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FloralWhite
         Me.ClientSize = New System.Drawing.Size(1236, 702)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -283,4 +297,5 @@ Partial Class ViewAllCustomers
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

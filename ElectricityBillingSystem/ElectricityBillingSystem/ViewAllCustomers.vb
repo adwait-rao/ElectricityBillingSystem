@@ -57,4 +57,10 @@ Public Class ViewAllCustomers
         Dashboard.Show()
 
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        cmd = New OleDbCommand("Delete * From Customer_Info Where meterNumber = '" & TextBox2.Text & "' ", conn)
+        cmd.ExecuteNonQuery()
+        MsgBox("Customer Deleted")
+    End Sub
 End Class

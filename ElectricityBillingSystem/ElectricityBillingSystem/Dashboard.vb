@@ -1,17 +1,15 @@
 ﻿Imports ElectricityBillingSystem.login
 Public Class Dashboard
-    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Hide()
+        Me.Dispose()
         login.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
         AddCustomer.Show()
+        Me.Dispose()
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -22,5 +20,12 @@ Public Class Dashboard
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
         AddPaymentBill.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        Me.Hide()
+        GenerateBill.Show()
+
     End Sub
 End Class

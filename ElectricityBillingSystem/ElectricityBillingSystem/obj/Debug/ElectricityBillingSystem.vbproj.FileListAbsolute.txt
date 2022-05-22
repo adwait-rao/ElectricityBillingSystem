@@ -44,3 +44,4 @@ H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBilling
 H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.Resources.resources
 H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.ViewAllCustomers.resources
 H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.vbproj.GenerateResource.Cache
+H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.GenerateBill.resources
