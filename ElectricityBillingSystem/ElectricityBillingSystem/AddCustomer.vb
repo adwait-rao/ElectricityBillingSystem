@@ -3,7 +3,7 @@
 'Heramb's Path: "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb"
 
 Public Class AddCustomer
-    Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
+    Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=H:\gad proj\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingDB.accdb")
     Dim ds As New DataSet
     Dim cmd As New OleDbCommand("select * from Customer_Info", conn)
     Dim da As New OleDbDataAdapter
