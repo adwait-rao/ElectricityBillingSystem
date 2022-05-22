@@ -48,9 +48,9 @@ Partial Class AddPaymentBill
         Me.Label1.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.Label1.Location = New System.Drawing.Point(34, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 24)
+        Me.Label1.Size = New System.Drawing.Size(142, 24)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Meter No."
+        Me.Label1.Text = "CustomerName"
         '
         'TextBox1
         '
