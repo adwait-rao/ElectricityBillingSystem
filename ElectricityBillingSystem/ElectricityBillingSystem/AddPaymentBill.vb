@@ -14,11 +14,10 @@ Public Class AddPaymentBill
             Else
                 Dim s As String = ComboBox2.SelectedItem
                 Dim a3 As String = ComboBox3.SelectedItem
-                Dim a1 As String = ComboBox1.SelectedValue
+                Dim a1 As String = ComboBox1.SelectedItem
                 'Dim a As String = a1.ToString
                 Select Case s
                     Case "Farmer"
-                        conn.Open()
                         units = Val(TextBox1.Text)
                         amount = units * 1.5
                         Dim abc As String = amount.ToString
@@ -29,7 +28,6 @@ Public Class AddPaymentBill
                         MsgBox("Data Inserted Into Bills Tables")
 
                     Case "Industries"
-                        conn.Open()
                         units = Val(TextBox1.Text)
                         amount = units * 3
                         Dim abc As String = amount.ToString
@@ -40,7 +38,6 @@ Public Class AddPaymentBill
                         MsgBox("Data Inserted Into Bills Tables")
 
                     Case "Commercial"
-                        conn.Open()
                         units = Val(TextBox1.Text)
                         amount = units * 4
                         Dim abc As String = amount.ToString
@@ -51,7 +48,6 @@ Public Class AddPaymentBill
                         MsgBox("Data Inserted Into Bills Tables")
 
                     Case "Domestic"
-                        conn.Open()
                         units = Val(TextBox1.Text)
                         amount = units * 5
                         Dim abc As String = amount.ToString
@@ -75,13 +71,12 @@ Public Class AddPaymentBill
     End Function
 
     Private Sub AddPaymentBill_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cmd = New OleDbCommand("Select * from Customer_Info", conn)
-        da = New OleDbDataAdapter(cmd)
-        da.Fill(ds, "Customer_Info")
-
-        ComboBox1.DataSource = ds.Tables(0)
-        ComboBox1.DisplayMember = "customerName"
-        ComboBox1.ValueMember = "meterNumber"
+        conn.Open()
+        cmd = New OleDbCommand("select * from Customer_Info", conn)
+        Dim dr As OleDbDataReader = cmd.ExecuteReader
+        While dr.Read
+            ComboBox1.Items.Add(dr("meterNumber").ToString)
+        End While
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

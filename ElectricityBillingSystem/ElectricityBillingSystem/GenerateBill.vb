@@ -7,7 +7,7 @@ Public Class GenerateBill
 
     Private Sub GenerateBill_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conn.Open()
-        cmd = New OleDbCommand("select * from bills", conn)
+        cmd = New OleDbCommand("select * from Customer_Info", conn)
         Dim dr As OleDbDataReader = cmd.ExecuteReader
         While dr.Read
             ComboBox1.Items.Add(dr("meterNumber").ToString)
@@ -28,8 +28,13 @@ Public Class GenerateBill
             Label24.Text = "Electric"
             Label26.Text = "30"
         End While
-        cmd = New OleDbCommand("select * from bills where meterNumber = '" & ComboBox1.SelectedItem & "'", conn)
-        dr = cmd.ExecuteReader
+        Try
+
+            cmd = New OleDbCommand("select * from bills where meterNumber = '" & ComboBox1.SelectedItem & "' and  b_month = '" & ComboBox2.SelectedItem & "'", conn)
+            dr = cmd.ExecuteReader
+        Catch ex As Exception
+            MsgBox("No Such Data In Bill Table")
+        End Try
         Dim a As Integer
         While dr.Read
             Label25.Text = dr("ConsumerType")
