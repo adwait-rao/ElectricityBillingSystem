@@ -16,7 +16,6 @@ Public Class AddPaymentBill
                 Dim a3 As String = ComboBox3.SelectedItem
                 Dim a1 As String = ComboBox1.SelectedValue
                 'Dim a As String = a1.ToString
-                MsgBox(s)
                 Select Case s
                     Case "Farmer"
                         conn.Open()
@@ -25,7 +24,7 @@ Public Class AddPaymentBill
                         Dim abc As String = amount.ToString
                         Dim bc As String = units.ToString
                         Dim a2 As String = s
-                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "')", conn)
+                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable,unitrate) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "','" & 1.5 & "')", conn)
                         cmd.ExecuteNonQuery()
                         MsgBox("Data Inserted Into Bills Tables")
 
@@ -36,7 +35,7 @@ Public Class AddPaymentBill
                         Dim abc As String = amount.ToString
                         Dim bc As String = units.ToString
                         Dim a2 As String = s
-                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "')", conn)
+                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable,unitrate) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "','" & 3 & "')", conn)
                         cmd.ExecuteNonQuery()
                         MsgBox("Data Inserted Into Bills Tables")
 
@@ -47,7 +46,7 @@ Public Class AddPaymentBill
                         Dim abc As String = amount.ToString
                         Dim bc As String = units.ToString
                         Dim a2 As String = s
-                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "')", conn)
+                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable,unitrate) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "','" & 4 & "')", conn)
                         cmd.ExecuteNonQuery()
                         MsgBox("Data Inserted Into Bills Tables")
 
@@ -58,7 +57,7 @@ Public Class AddPaymentBill
                         Dim abc As String = amount.ToString
                         Dim bc As String = units.ToString
                         Dim a2 As String = s
-                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "')", conn)
+                        cmd = New OleDbCommand("insert into bills (MeterNumber,b_month,ConsumerType,unitsConsumed,amountpayable,unitrate) values('" & a1 & "','" & a3 & "', ' " & a2 & " ','" & bc & "','" & abc & "','" & 5 & "')", conn)
                         cmd.ExecuteNonQuery()
                         MsgBox("Data Inserted Into Bills Tables")
 
