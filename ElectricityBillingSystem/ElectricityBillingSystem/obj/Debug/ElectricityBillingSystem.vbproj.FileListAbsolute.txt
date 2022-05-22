@@ -27,3 +27,6 @@ H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityB
 H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.vbproj.GenerateResource.Cache
 H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.AddCustomer.resources
 H:\proj\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.ViewAllCustomers.resources
+C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.AddCustomer.resources
+C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.ViewAllCustomers.resources
+C:\Users\adwaitrao\Documents\GitHub\ElectricityBillingSystem\ElectricityBillingSystem\ElectricityBillingSystem\obj\Debug\ElectricityBillingSystem.AddPaymentBill.resources

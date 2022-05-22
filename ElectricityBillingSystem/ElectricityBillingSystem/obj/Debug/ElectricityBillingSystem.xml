@@ -27,6 +27,14 @@ ElectricityBillingSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:ElectricityBillingSystem.My.Resources.Resources.mmm">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:ElectricityBillingSystem.My.Resources.Resources.Untitled_design">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:ElectricityBillingSystem.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

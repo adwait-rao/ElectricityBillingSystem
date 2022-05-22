@@ -76,6 +76,12 @@
     <Compile Include="AddCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddPaymentBill.Designer.vb">
+      <DependentUpon>AddPaymentBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPaymentBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
     <EmbeddedResource Include="AddCustomer.resx">
       <DependentUpon>AddCustomer.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddPaymentBill.resx">
+      <DependentUpon>AddPaymentBill.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mmm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

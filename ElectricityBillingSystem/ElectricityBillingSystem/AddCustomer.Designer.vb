@@ -38,9 +38,9 @@ Partial Class AddCustomer
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -80,7 +80,7 @@ Partial Class AddCustomer
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(62, 250)
+        Me.Label4.Location = New System.Drawing.Point(60, 250)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 20)
         Me.Label4.TabIndex = 4
@@ -90,7 +90,7 @@ Partial Class AddCustomer
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(76, 311)
+        Me.Label5.Location = New System.Drawing.Point(60, 311)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 20)
         Me.Label5.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class AddCustomer
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(36, 368)
+        Me.Label6.Location = New System.Drawing.Point(60, 370)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(90, 20)
         Me.Label6.TabIndex = 6
@@ -110,7 +110,7 @@ Partial Class AddCustomer
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(62, 431)
+        Me.Label7.Location = New System.Drawing.Point(60, 431)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 20)
         Me.Label7.TabIndex = 7
@@ -162,7 +162,7 @@ Partial Class AddCustomer
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(39, 188)
+        Me.Label8.Location = New System.Drawing.Point(60, 188)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(87, 20)
         Me.Label8.TabIndex = 13
@@ -173,7 +173,7 @@ Partial Class AddCustomer
         Me.Button1.BackColor = System.Drawing.Color.MediumPurple
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(102, 488)
+        Me.Button1.Location = New System.Drawing.Point(64, 488)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(162, 53)
         Me.Button1.TabIndex = 14
@@ -185,19 +185,31 @@ Partial Class AddCustomer
         Me.Button2.BackColor = System.Drawing.Color.MediumPurple
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button2.Location = New System.Drawing.Point(340, 488)
+        Me.Button2.Location = New System.Drawing.Point(271, 488)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(141, 53)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(862, 22)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(120, 35)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "BACK"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.ElectricityBillingSystem.My.Resources.Resources.image
-        Me.PictureBox2.Location = New System.Drawing.Point(548, 99)
+        Me.PictureBox2.Location = New System.Drawing.Point(562, 132)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(392, 418)
+        Me.PictureBox2.Size = New System.Drawing.Size(392, 344)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
@@ -212,23 +224,11 @@ Partial Class AddCustomer
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(862, 22)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(120, 35)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "BACK"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
         'AddCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Moccasin
+        Me.BackColor = System.Drawing.Color.Lavender
         Me.ClientSize = New System.Drawing.Size(1013, 564)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox2)
